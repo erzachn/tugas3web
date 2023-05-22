@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --warna1: #aee2ff;
+  --warna2: #b799ff;
+  --warna3: #acbcff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .kalkulator {
+  width: 300px;
+  margin: 0 auto;
+  background-color: var(--warna1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.main .kalkulator .keluaran {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  height: 2rem;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main .kalkulator .tombol-kalkulator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.main .kalkulator .tombol-kalkulator .angka {
+  background-color: var(--warna2);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main .kalkulator .tombol-kalkulator .angka:hover {
+  background-color: var(--warna3);
+}
+
+.main .kalkulator .tombol-kalkulator .operator {
+  background-color: var(--warna3);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main .kalkulator .tombol-kalkulator .operator:hover {
+  background-color: #d00;
+}
+
+#sama-dengan {
+  background-color: #00f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sama-dengan:hover {
+  background-color: #007;
+}
+
+#reset {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3sease;
+}
+
+#reset:hover {
+  background-color: #000;
+}

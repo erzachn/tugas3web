@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tugas3</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div></div>
+      <div class="card">
+        <form>
+          <div class="input">
+            <label>Nama</label>
+            <input id="namaMhs" required name="nama" type="text" placeholder="nama mahasiswa" />
+            <br />
+            <label>NIM</label>
+            <input id="nimMhs" required name="nim" type="number" placeholder="nim mahasiswa" />
+            <br />
+            <label>Nilai</label>
+            <input id="nilaiMhs" max="100" required name="nilai" type="number" placeholder="nilai" />
+            <br />
+          </div>
+
+          <div class="tombol">
+            <button type="submit" onclick="hitungNilai()">Hasil</button>
+            <button id="reset" type="reset">Reset</button>
+          </div>
+        </form>
+        <div class="output" id="output"></div>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="kalkulator">
+        <div class="keluaran">
+          <span id="hasil"></span>
+        </div>
+        <div class="tombol-kalkulator">
+          <button class="angka" onclick="tambahAngka('7')">7</button>
+          <button class="angka" onclick="tambahAngka('8')">8</button>
+          <button class="angka" onclick="tambahAngka('9')">9</button>
+          <button class="operator" onclick="tambahOperator('+')">+</button>
+          <button class="angka" onclick="tambahAngka('4')">4</button>
+          <button class="angka" onclick="tambahAngka('5')">5</button>
+          <button class="angka" onclick="tambahAngka('6')">6</button>
+          <button class="operator" onclick="tambahOperator('-')">-</button>
+          <button class="angka" onclick="tambahAngka('1')">1</button>
+          <button class="angka" onclick="tambahAngka('2')">2</button>
+          <button class="angka" onclick="tambahAngka('3')">3</button>
+          <button class="operator" onclick="tambahOperator('*')">x</button>
+          <button class="angka" onclick="tambahAngka('0')">0</button>
+          <button class="operator" onclick="tambahOperator('/')">/</button>
+          <button id="sama-dengan" onclick="hitung()">=</button>
+          <button id="reset" onclick="resetKalkulator()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
